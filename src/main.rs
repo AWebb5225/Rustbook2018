@@ -17,7 +17,6 @@ fn main() {
 
         println!("You guess: {}", guess);
         let rand_num = rand::thread_rng().gen_range(1,100);
-        println!("The random number is: {}", rand_num);
     
         match guess.cmp(&rand_num) {
             Ordering::Less => {
